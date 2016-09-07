@@ -1,0 +1,112 @@
+### Source/Version Control ###
+
+### What is it and why do I care?
+
+- Source/Version control is a paradigm important to software developers
+- Ensures we can make changes to our code but have a running history of those changes
+- Ex: Writing a book with multiple editors
+
+- Two common version control systems are git and Mecurial
+- Git vs GitHub
+    - Git is a tool
+    - GitHub is an online repository that uses git
+
+- What is version control good for?
+    - EVERYTHING: Notes, lessons, coding (especially group projects)
+
+
+
+### Git Terms ###
+
+
+### Repository
+
+- A database that stores all version of your changes in a particular directory
+
+### Init
+
+- A git command that initializes a directory to have a git repository for it
+
+### Staging Area or Index
+
+- A component of the git repository
+- A table of all files you want to change in your local repo
+
+### Add
+
+- A git command
+- Adds modified files to your staging area
+
+### Commit
+
+- A git command
+- Records everything into your staging area to your local repo
+
+### Status
+
+- A git command
+- Shows all files in staging area
+- Shows all modified files NOT YET in the staging area
+
+### Branch
+
+- "Current working version"
+
+### Head vs HEAD
+
+- A git object
+- Simply refers to the tip of a branch
+- Can have many heads in a repo
+- HEAD specifically refers to the current working head
+
+### Merge
+
+- A git command
+- Merges two branchs together
+
+### Merge Conflict
+
+- A git warning
+- Happens when the same line(s) of a file are different between the two branches during a merge
+- These are resolved manually
+
+### Online Repository/Backup
+
+- A backup of the local git repository on your computer
+- Often refered to as "origin"
+- Ex: GitHub, BitBucket, Visual Studio Online, etc.
+
+### Push
+
+- A git command
+- Updates a different repo with changes from your local repo
+- This is done at the branch level
+
+### Pull
+
+- Same as push, but updates local repo with changes from a different repo
+
+### Clone
+
+- A git command
+- Copies an existing repo to your local machine
+
+
+### Basic Development Cycle
+
+- Note: This all happens in the same directory and to the same files on your machine!!!
+- A master branch is automatically created for you when init a repo
+- Immediately make a "development" branch off of master
+- From there, all future branches should branch off develop and merge back onto develop
+- Master is only updates by merging develop onto it, no other branches!
+    - This only happens during a major release/version
+
+- An alternative is to have release branches
+
+
+### GUI alternatives
+
+- GitHub desktop app
+- SourceTree
+- GitKraken
+- Visual Studio
